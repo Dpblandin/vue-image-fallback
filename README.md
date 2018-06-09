@@ -44,7 +44,14 @@ Vue.use(ImageFallback);
           ],
           
           loading: "url/to/loader/image",
+          onError: this.onError()
         }
+      }
+    },
+    
+    methods: {
+      onError() {
+        // do something here when all images failed to load
       }
     }
   }
