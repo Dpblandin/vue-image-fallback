@@ -1,0 +1,13 @@
+{
+  "name": "vue-image-fallback",
+  "version": "1.0.0",
+  "description": "Image fallback directive for Vuejs",
+  "author": "David Pascaud Blandin <dav.pascaud@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dpblandin/vue-image-fallback.git"
+  },
+  "jsnext:main": "src/index.js",
+  "module": "src/index.js"
+}
