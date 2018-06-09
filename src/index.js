@@ -22,7 +22,7 @@ function onError(el, options) {
         return el.setAttribute('src', options.images[index + 1]);
     }
 
-    return null;
+    return options.onError;
 }
 
 function parseBindingValue(bindingValue) {
@@ -30,6 +30,7 @@ function parseBindingValue(bindingValue) {
         return {
             images: bindingValue,
             loading: null,
+            onError: null,
         }
     }
 
@@ -40,6 +41,7 @@ function parseBindingValue(bindingValue) {
     return {
         images: [bindingValue],
         loading: null,
+        onError : null,
     }
 }
 
@@ -51,6 +53,7 @@ function handleObject(value) {
     return {
         images: value.images,
         loading: value.loading || null,
+        onError: value.onError || null,
     }
 }
 
