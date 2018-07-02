@@ -22,7 +22,7 @@ function onError(el, options) {
         return el.setAttribute('src', options.images[index + 1]);
     }
 
-    return options.onError;
+    return options.onError();
 }
 
 function parseBindingValue(bindingValue) {
